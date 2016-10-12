@@ -10,6 +10,7 @@
 (autoload 'regex-tool "regex-tool" "\
 
 
+
 \(fn)" t nil)
 
 ;;;***
