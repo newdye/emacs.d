@@ -1,4 +1,6 @@
 (add-to-list 'exec-path "C:/Program Files/git/bin")
 (add-to-list 'exec-path "D:/32.emacs/GnuGlobal/bin/")
 (add-to-list 'Info-additional-directory-list "D:/32.emacs/GnuGlobal/share/info")
+(setq tramp-default-method "plink")
+(setq password-cache-expiry "3600000")
 (provide 'init-local)
