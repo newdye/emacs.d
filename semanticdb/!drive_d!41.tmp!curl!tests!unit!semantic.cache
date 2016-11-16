@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign" "nostdinc")) nil [1006 1042])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_builddir)/include/curl" "-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_builddir)/lib" "-I$(top_srcdir)/lib" "-I$(top_srcdir)/src" "-I$(top_srcdir)/tests/libtest" "-I$(top_builddir)/ares" "-I$(top_srcdir)/ares")) nil [1855 2266])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_builddir)/include/curl" "-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_builddir)/lib" "-I$(top_srcdir)/lib" "-I$(top_srcdir)/src" "-I$(top_srcdir)/tests/libtest")) nil [2271 2597])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.inc" "CMakeLists.txt")) nil [2604 2645])
+            ("LIBS" variable (:default-value ("$(BLANK_AT_MAKETIME)")) nil [2698 2726])
+            ("LDADD" variable (:default-value ("$(top_builddir)/src/libcurltool.la" "$(top_builddir)/lib/libcurlu.la" "@LDFLAGS@" "@LIBCURL_LIBS@")) nil [2727 2854])
+            ("DEPENDENCIES" variable (:default-value ("$(top_builddir)/src/libcurltool.la" "$(top_builddir)/lib/libcurlu.la")) nil [2855 2954])
+            ("AM_CPPFLAGS" variable (:default-value ("-DCURL_STATICLIB" "-DUNITTESTS")) nil [2955 2999])
+            ("Makefile.inc" include nil nil [3041 3062])
+            ("checksrc" function nil nil [3063 3125])
+            ("noinst_PROGRAMS" variable (:default-value ("$(UNITPROGS)")) nil [3145 3176])
+            ("noinst_PROGRAMS" variable nil nil [3181 3199]))          
+      :file "Makefile.am"
+      :pointmax 3205
+      :fsize 3285
+      :lastmodtime '(22570 35375 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Makefile.inc"
+      :fsize 2325
+      :lastmodtime '(22570 35375 0 0)))
+  :file "!drive_d!41.tmp!curl!tests!unit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

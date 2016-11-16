@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("exampledir" variable (:default-value ("$(datadir)/doc/libxml2-python-$(LIBXML_VERSION)/examples")) nil [1 71])
+            ("dist_example_DATA" variable (:default-value ("$(PYTESTS)" "$(XMLS)")) nil [71 110])
+            ("PYTESTS" variable (:default-value ("build.py" "attribs.py" "tst.py" "tstxpath.py" "xpathext.py" "push.py" "pushSAX.py" "pushSAXhtml.py" "error.py" "serialize.py" "validate.py" "tstURI.py" "cutnpaste.py" "xpathret.py" "xpath.py" "outbuf.py" "inbuf.py" "input_callback.py" "resolver.py" "regexp.py" "reader.py" "reader2.py" "reader3.py" "reader4.py" "reader5.py" "reader6.py" "reader7.py" "reader8.py" "readernext.py" "walker.py" "nsdel.py" "ctxterror.py" "readererr.py" "relaxng.py" "schema.py" "thread2.py" "sync.py" "tstLastError.py" "indexes.py" "dtdvalid.py" "tstmem.py" "validDTD.py" "validSchemas.py" "validRNG.py" "compareNodes.py" "xpathns.py" "xpathleak.py")) nil [111 935])
+            ("XMLS" variable (:default-value ("tst.xml" "valid.xml" "invalid.xml" "test.dtd")) nil [936 1006])
+            ("CLEANFILES" variable (:default-value ("core" "tmp.xml" "*.pyc")) nil [1007 1039])
+            ("tests" function (:arguments ("$(PYTESTS)")) nil [1055 1541])
+            ("tests" function nil nil [1546 1553]))          
+      :file "Makefile.am"
+      :pointmax 1559
+      :fsize 1558
+      :lastmodtime '(22201 48317 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!41.tmp!libxml2-2.9.4!python!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

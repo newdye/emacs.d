@@ -1,0 +1,217 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("usp.h" include nil nil [409 425])
+            ("DEBUG" variable (:constant-flag t) nil [991 996])
+            ("tagT_ScpTcbCtrl" type
+               (:members 
+                  ( ("dwTnoCtrlPos" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1277 1318])
+                    ("dwMainTaskCtrlPos" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1323 1369])
+                    ("dwTaskCtrlPos" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1374 1416])
+                    ("dwCustAllocPos" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1425 1468])
+                    ("custMutex" variable (:type ("USP_OssIpcMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1473 1511])
+                    ("wCustAllocCur" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1516 1558])
+                    ("wCustTaskMax" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1563 1604]))                  
+                :type "struct")
+                nil [1239 1619])
+            ("T_ScpTcbCtrl" type
+               (:typedef ("tagT_ScpTcbCtrl" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1239 1619])
+            ("s_aucBuf" variable
+               (:dereference 1
+                :type ("BYTE" type (:type "class") nil nil))
+                nil [1988 2020])
+            ("ipctool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dwIpckey" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2409 2425])
+                    ("ucIpcDetail" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2426 2443]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2389 2444])
+            ("wtdtool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2465 2470]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2445 2471])
+            ("reboottool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2495 2500]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2472 2501])
+            ("preparetool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2526 2531]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2502 2532])
+            ("sntool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ucSnVal" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2552 2565]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2533 2566])
+            ("custtool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2588 2593]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2567 2594])
+            ("fpgatool" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pcFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2616 2629]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2595 2630])
+            ("usage" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2649 2654]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2631 2655])
+            ("HextoDec" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pucStr" variable
+                       (:pointer 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2679 2692])
+                    ("pdwDec" variable
+                       (:pointer 1
+                        :type ("WORD32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2693 2708]))                  
+                :type ("WORD32" type (:type "class") nil nil))
+                nil [2656 2709])
+            ("GetNumber" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pucStr" variable
+                       (:pointer 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2732 2745])
+                    ("pdwDec" variable
+                       (:pointer 1
+                        :type ("WORD32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2746 2761]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2710 2762])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3187 3196])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3197 3210]))                  
+                :type "int")
+                nil [3178 5267])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5712 5717]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [5694 6353])
+            ("HextoDec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pucStr" variable
+                       (:pointer 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6934 6947])
+                    ("pdwDec" variable
+                       (:pointer 1
+                        :type ("WORD32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6948 6963]))                  
+                :type ("WORD32" type (:type "class") nil nil))
+                nil [6911 7782])
+            ("GetNumber" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pucStr" variable
+                       (:pointer 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8303 8316])
+                    ("pdwDec" variable
+                       (:pointer 1
+                        :type ("WORD32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8317 8332]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [8281 8616])
+            ("ipctool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dwIpckey" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9127 9143])
+                    ("ucIpcDetail" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9144 9161]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [9107 10909])
+            ("wtdtool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11349 11354]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [11329 11837])
+            ("reboottool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12286 12291]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [12263 12612])
+            ("sntool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ucSnVal" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13089 13102]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [13070 13324])
+            ("preparetool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13780 13785]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [13756 14098])
+            ("custtool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("VOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14551 14556]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [14530 15499])
+            ("fpgatool" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pcFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15964 15977]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [15943 17087]))          
+      :file "osstools.c"
+      :pointmax 17093
+      :fsize 17092
+      :lastmodtime '(22550 42007 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEBUG" . ((symbol "printf" 1003 . 1009)))
+          )
+))
+  :file "!drive_d!02.workspace!6730!Code!USP!Code!Tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

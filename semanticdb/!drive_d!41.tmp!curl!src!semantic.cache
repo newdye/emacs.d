@@ -1,0 +1,157 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("tool_setup.h" include nil nil [1027 1050])
+            ("ENABLE_CURLX_PRINTF" variable (:constant-flag t) nil [1060 1079])
+            ("curlx.h" include nil nil [1117 1135])
+            ("tool_cfgable.h" include nil nil [1137 1162])
+            ("tool_msgs.h" include nil nil [1163 1185])
+            ("memdebug.h" include nil nil [1187 1208])
+            ("WARN_PREFIX" variable (:constant-flag t) nil [1250 1261])
+            ("NOTE_PREFIX" variable (:constant-flag t) nil [1282 1293])
+            ("voutf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("config" variable
+                       (:pointer 1
+                        :type ("GlobalConfig" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1322 1350])
+                    ("prefix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1369 1388])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1407 1423])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1442 1453]))                  
+                :type "void")
+                nil [1304 2267])
+            ("notef" function
+               (:arguments 
+                  ( ("config" variable
+                       (:pointer 1
+                        :type ("GlobalConfig" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2379 2407])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2408 2424])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2425 2429]))                  
+                :type "void")
+                nil [2368 2547])
+            ("warnf" function
+               (:arguments 
+                  ( ("config" variable
+                       (:pointer 1
+                        :type ("GlobalConfig" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2672 2700])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2701 2717])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2718 2722]))                  
+                :type "void")
+                nil [2661 2814])
+            ("helpf" function
+               (:arguments 
+                  ( ("errors" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2882 2895])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2896 2912])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2913 2917]))                  
+                :type "void")
+                nil [2871 3205]))          
+      :file "tool_msgs.c"
+      :pointmax 3207
+      :fsize 3327
+      :lastmodtime '(22570 35374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NOTE_PREFIX" . ((string "\"Note: \"" 1294 . 1302)))
+          ("ENABLE_CURLX_PRINTF")
+          ("WARN_PREFIX" . ((string "\"Warning: \"" 1262 . 1273)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "Makefile.inc"
+      :fsize 2450
+      :lastmodtime '(22570 35374 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign" "nostdinc")) nil [1006 1042])
+            (".DELETE_ON_ERROR" function nil nil [1081 1099])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_builddir)/include/curl" "-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_builddir)/lib" "-I$(top_builddir)/src" "-I$(top_srcdir)/lib" "-I$(top_srcdir)/src")) nil [1893 2209])
+            ("bin_PROGRAMS" variable (:default-value ("curl")) nil [2210 2230])
+            ("AM_CPPFLAGS" variable (:default-value ("-DCURL_STATICLIB")) nil [2261 2293])
+            ("Makefile.inc" include nil nil [2300 2321])
+            ("curl_SOURCES" variable (:default-value ("$(CURL_FILES)")) nil [2359 2388])
+            ("CFLAGS" variable (:default-value ("@CURL_CFLAG_EXTRAS@")) nil [2415 2445])
+            ("LIBS" variable (:default-value ("$(BLANK_AT_MAKETIME)")) nil [2498 2526])
+            ("curl_LDADD" variable (:default-value ("$(top_builddir)/lib/libcurl.la" "@LIBMETALINK_LIBS@" "@LIBCURL_LIBS@")) nil [2552 2630])
+            ("curl_LDADD" variable (:default-value ("$(top_builddir)/lib/libcurl.la" "@LIBMETALINK_LIBS@" "@NSS_LIBS@" "@SSL_LIBS@" "@ZLIB_LIBS@" "@CURL_NETWORK_AND_TIME_LIBS@")) nil [2635 2761])
+            ("curl_LDFLAGS" variable (:default-value ("@LIBMETALINK_LDFLAGS@")) nil [2768 2805])
+            ("curl_CPPFLAGS" variable (:default-value ("$(AM_CPPFLAGS)" "$(LIBMETALINK_CPPFLAGS)")) nil [2805 2860])
+            ("curl_DEPENDENCIES" variable (:default-value ("$(top_builddir)/lib/libcurl.la")) nil [2860 2911])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libcurltool.la")) nil [3001 3037])
+            ("libcurltool_la_CPPFLAGS" variable (:default-value ("$(LIBMETALINK_CPPFLAGS)" "$(AM_CPPFLAGS)" "-DCURL_STATICLIB" "-DUNITTESTS")) nil [3037 3159])
+            ("libcurltool_la_CFLAGS" variable nil nil [3159 3183])
+            ("libcurltool_la_LDFLAGS" variable (:default-value ("-static" "$(LINKFLAGS)")) nil [3183 3229])
+            ("libcurltool_la_SOURCES" variable (:default-value ("$(curl_SOURCES)")) nil [3229 3270])
+            ("BUILT_SOURCES" variable (:default-value ("tool_hugehelp.c")) nil [3277 3309])
+            ("CLEANFILES" variable (:default-value ("tool_hugehelp.c")) nil [3309 3338])
+            ("NROFF" variable (:default-value ("env" "LC_ALL=C" "@NROFF@" "@MANOPT@")) nil [3425 3499])
+            ("EXTRA_DIST" variable (:default-value ("mkhelp.pl" "makefile.dj" "Makefile.vc6" "Makefile.b32" "Makefile.m32" "macos/curl.mcp.xml.sit.hqx" "macos/MACINSTALL.TXT" "macos/src/curl_GUSIConfig.cpp" "macos/src/macos_main.cpp" "makefile.amiga" "curl.rc" "Makefile.netware" "Makefile.inc" "Makefile.Watcom" "CMakeLists.txt")) nil [3500 3772])
+            ("MANPAGE" variable (:default-value ("$(top_srcdir)/docs/curl.1")) nil [3773 3807])
+            ("README" variable (:default-value ("$(top_srcdir)/docs/MANUAL")) nil [3807 3840])
+            ("MKHELP" variable (:default-value ("$(top_srcdir)/src/mkhelp.pl")) nil [3840 3875])
+            ("HUGE" variable (:default-value ("tool_hugehelp.c")) nil [3875 3896])
+            ("$(HUGE)" function (:arguments ("$(README)" "$(MANPAGE)" "mkhelp.pl")) nil [4062 4376])
+            ("$(HUGE)" function (:arguments ("$(README)" "$(MANPAGE)" "mkhelp.pl")) nil [4453 4598])
+            ("$(HUGE)" function nil nil [4678 4842])
+            ("checksrc" function nil nil [4952 5067])
+            ("all-local" function (:arguments ("checksrc")) nil [5149 5169]))          
+      :file "Makefile.am"
+      :pointmax 5175
+      :fsize 5312
+      :lastmodtime '(22570 35374 0 0)
+      :unmatched-syntax '((ELSE 4605 . 4609) (bol 4605 . 4605) (ELSE 4376 . 4380) (bol 4376 . 4376)))
+    (semanticdb-table "semanticdb-table"
+      :file "tool_setup.h"
+      :fsize 2431
+      :lastmodtime '(22570 35374 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "tool_cfgable.h"
+      :fsize 9522
+      :lastmodtime '(22570 35374 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "tool_msgs.h"
+      :fsize 1361
+      :lastmodtime '(22570 35374 0 0)))
+  :file "!drive_d!41.tmp!curl!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

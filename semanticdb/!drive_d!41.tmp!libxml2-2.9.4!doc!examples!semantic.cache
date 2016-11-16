@@ -1,0 +1,107 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(srcdir)/include")) nil [70 154])
+            ("AM_CFLAGS" variable (:default-value ("$(THREAD_CFLAGS)" "$(Z_CFLAGS)")) nil [154 195])
+            ("LDADD" variable (:default-value ("$(RDL_LIBS)" "$(STATIC_BINARIES)" "$(top_builddir)/libxml2.la" "$(THREAD_LIBS)" "$(Z_LIBS)" "$(ICONV_LIBS)" "-lm" "$(WIN32_EXTRA_LIBADD)")) nil [195 326])
+            ("CLEANFILES" variable (:default-value ("*.tmp")) nil [327 346])
+            ("rebuild" function (:arguments ("examples.xml" "index.html")) nil [363 396])
+            (".PHONY" function (:arguments ("rebuild")) nil [396 412])
+            ("examples.xml" function (:arguments ("index.py" "$(noinst_PROGRAMS:=.c)")) nil [413 513])
+            ("index.html" function (:arguments ("examples.xml" "examples.xsl")) nil [514 684])
+            ("install-data-local" function nil nil [691 868])
+            ("clean-local" function nil nil [869 922])
+            ("EXTRA_DIST" variable (:default-value ("examples.xml" "examples.xsl" "index.html" "index.py" "io1.res" "io2.res" "reader1.res" "reader3.res" "reader4.res" "test1.xml" "test2.xml" "test3.xml" "tree1.res" "tree2.res" "tst.xml" "writer.xml" "xpath1.res" "xpath2.res")) nil [923 1179])
+            ("noinst_PROGRAMS" variable (:default-value ("io1")) nil [1180 1348])
+            ("io1_SOURCES" variable (:default-value ("io1.c")) nil [1349 1369])
+            ("io2_SOURCES" variable (:default-value ("io2.c")) nil [1370 1390])
+            ("parse1_SOURCES" variable (:default-value ("parse1.c")) nil [1391 1417])
+            ("parse2_SOURCES" variable (:default-value ("parse2.c")) nil [1418 1444])
+            ("parse3_SOURCES" variable (:default-value ("parse3.c")) nil [1445 1471])
+            ("parse4_SOURCES" variable (:default-value ("parse4.c")) nil [1472 1498])
+            ("reader1_SOURCES" variable (:default-value ("reader1.c")) nil [1499 1527])
+            ("reader2_SOURCES" variable (:default-value ("reader2.c")) nil [1528 1556])
+            ("reader3_SOURCES" variable (:default-value ("reader3.c")) nil [1557 1585])
+            ("reader4_SOURCES" variable (:default-value ("reader4.c")) nil [1586 1614])
+            ("testWriter_SOURCES" variable (:default-value ("testWriter.c")) nil [1615 1649])
+            ("tree1_SOURCES" variable (:default-value ("tree1.c")) nil [1650 1674])
+            ("tree2_SOURCES" variable (:default-value ("tree2.c")) nil [1675 1699])
+            ("xpath1_SOURCES" variable (:default-value ("xpath1.c")) nil [1700 1726])
+            ("xpath2_SOURCES" variable (:default-value ("xpath2.c")) nil [1727 1753])
+            ("valgrind" function nil nil [1754 1799])
+            ("tests" function (:arguments ("$(noinst_PROGRAMS)")) nil [1800 4070]))          
+      :file "Makefile.am"
+      :pointmax 4070
+      :fsize 4069
+      :lastmodtime '(22201 48315 0 0)
+      :unmatched-syntax '((shell-command 4001 . 4069) (bol 4000 . 4000)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [596 614])
+            ("string.h" include (:system-flag t) nil [615 634])
+            ("libxml/encoding.h" include (:system-flag t) nil [635 663])
+            ("libxml/xmlwriter.h" include (:system-flag t) nil [664 693])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38311 38316]))                  
+                :type "int")
+                nil [38302 38400]))          
+      :file "testWriter.c"
+      :pointmax 38408
+      :fsize 38407
+      :lastmodtime '(22201 48315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [527 545])
+            ("libxml/xmlreader.h" include (:system-flag t) nil [546 575])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2442 2447]))                  
+                :type "int")
+                nil [2433 2523]))          
+      :file "reader1.c"
+      :pointmax 2531
+      :fsize 2530
+      :lastmodtime '(22201 48315 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [360 378])
+            ("libxml/parser.h" include (:system-flag t) nil [379 405])
+            ("libxml/tree.h" include (:system-flag t) nil [406 430])
+            ("example1Func" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [570 591]))                  
+                :type "void")
+                nil [545 809])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [820 829])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [830 842]))                  
+                :type "int")
+                nil [811 1300]))          
+      :file "parse1.c"
+      :pointmax 1301
+      :fsize 1300
+      :lastmodtime '(19057 47922 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!41.tmp!libxml2-2.9.4!doc!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

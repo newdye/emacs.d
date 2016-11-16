@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("ZSH_FUNCTIONS_DIR" variable (:default-value ("@ZSH_FUNCTIONS_DIR@")) nil [1006 1046])
+            ("PERL" variable (:default-value ("@PERL@")) nil [1046 1060])
+            ("ZSH_COMPLETION_FUNCTION_FILENAME" variable (:default-value ("_curl")) nil [1061 1102])
+            ("all-local" function (:arguments ("$(ZSH_COMPLETION_FUNCTION_FILENAME)")) nil [1103 1150])
+            ("$(ZSH_COMPLETION_FUNCTION_FILENAME)" function (:arguments ("zsh.pl")) nil [1151 1195])
+            ("install-data-local" function nil nil [1468 1488]))          
+      :file "Makefile.am"
+      :pointmax 1777
+      :fsize 1819
+      :lastmodtime '(22570 35374 0 0)
+      :unmatched-syntax '((shell-command 1652 . 1770) (bol 1651 . 1651) (shell-command 1609 . 1650) (bol 1608 . 1608) (ELSE 1577 . 1581) (bol 1577 . 1577) (shell-command 1507 . 1576) (bol 1506 . 1506) (shell-command 1397 . 1460) (bol 1396 . 1396) (shell-command 1317 . 1395) (bol 1316 . 1316) (ELSE 1285 . 1289) (bol 1285 . 1285) (shell-command 1214 . 1284) (bol 1213 . 1213))))
+  :file "!drive_d!41.tmp!curl!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

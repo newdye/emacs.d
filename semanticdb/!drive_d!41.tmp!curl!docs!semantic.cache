@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign" "no-dependencies")) nil [1007 1050])
+            ("man_MANS" variable (:default-value ("curl.1" "curl-config.1")) nil [1051 1083])
+            ("noinst_man_MANS" variable (:default-value ("mk-ca-bundle.1")) nil [1083 1116])
+            ("GENHTMLPAGES" variable (:default-value ("curl.html" "curl-config.html" "mk-ca-bundle.html")) nil [1116 1176])
+            ("PDFPAGES" variable (:default-value ("curl.pdf" "curl-config.pdf" "mk-ca-bundle.pdf")) nil [1176 1229])
+            ("HTMLPAGES" variable (:default-value ("$(GENHTMLPAGES)" "index.html")) nil [1230 1269])
+            ("SUBDIRS" variable (:default-value ("examples" "libcurl")) nil [1270 1297])
+            ("CLEANFILES" variable (:default-value ("$(GENHTMLPAGES)" "$(PDFPAGES)")) nil [1298 1339])
+            ("EXTRA_DIST" variable (:default-value ("MANUAL" "BUGS" "CONTRIBUTE.md" "FAQ" "FEATURES" "INTERNALS.md" "SSLCERTS.md" "README.win32" "RESOURCES" "TODO" "TheArtOfHttpScripting" "THANKS" "VERSIONS" "KNOWN_BUGS" "BINDINGS.md" "$(man_MANS)" "HISTORY.md" "INSTALL" "INSTALL.md" "LICENSE-MIXING.md" "README.netware" "MAIL-ETIQUETTE" "HTTP-COOKIES.md" "SECURITY.md" "RELEASE-PROCEDURE" "SSL-PROBLEMS.md" "HTTP2.md" "ROADMAP.md" "CODE_OF_CONDUCT.md" "CODE_STYLE.md" "CHECKSRC.md")) nil [1340 1756])
+            ("MAN2HTML" variable (:default-value ("roffit" "$<" ">$@")) nil [1757 1781])
+            ("SUFFIXES" variable (:default-value (".1" ".html" ".pdf")) nil [1782 1807])
+            ("html" function (:arguments ("$(HTMLPAGES)")) nil [1808 1852])
+            ("pdf" function (:arguments ("$(PDFPAGES)")) nil [1853 1894])
+            (".1.html" function nil nil [1895 1917])
+            (".1.pdf" function nil nil [1918 2072]))          
+      :file "Makefile.am"
+      :pointmax 2073
+      :fsize 2134
+      :lastmodtime '(22570 35373 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!41.tmp!curl!docs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

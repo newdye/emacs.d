@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [1 28])
+            ("EXTRA_DIST" variable (:default-value ("README" "curl.list.in")) nil [29 62]))          
+      :file "Makefile.am"
+      :pointmax 62
+      :fsize 64
+      :lastmodtime '(22570 35374 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!41.tmp!curl!packages!EPM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

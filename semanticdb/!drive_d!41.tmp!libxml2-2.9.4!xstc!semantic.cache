@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("PYSCRIPTS" variable (:default-value ("nist-test.py" "ms-test.py" "sun-test.py")) nil [41 87])
+            ("TESTDIR" variable (:default-value ("Tests")) nil [87 101])
+            ("TESTDIRS" variable (:default-value ("$(TESTDIR)/msxsdtest" "$(TESTDIR)/suntest" "$(TESTDIR)/Datatypes")) nil [101 171])
+            ("TARBALL" variable (:default-value ("xsts-2002-01-16.tar.gz")) nil [171 202])
+            ("TARBALL_2" variable (:default-value ("xsts-2004-01-14.tar.gz")) nil [202 235])
+            ("TSNAME" variable (:default-value ("xmlschema2002-01-16")) nil [235 262])
+            ("TSNAME_2" variable (:default-value ("xmlschema2004-01-14")) nil [262 291])
+            ("TARBALLURL" variable (:default-value ("http://www.w3.org/XML/2004/xml-schema-test-suite/$(TSNAME)/$(TARBALL)")) nil [291 372])
+            ("TARBALLURL_2" variable (:default-value ("http://www.w3.org/XML/2004/xml-schema-test-suite/$(TSNAME_2)/$(TARBALL_2)")) nil [372 459])
+            ("MSTESTDEF" variable (:default-value ("MSXMLSchema1-0-20020116.testSet")) nil [459 501])
+            ("SUNTESTDEF" variable (:default-value ("SunXMLSchema1-0-20020116.testSet")) nil [501 545])
+            ("NISTTESTDEF" variable (:default-value ("NISTXMLSchema1-0-20020116.testSet")) nil [545 591])
+            ("NISTTESTDEF_2" variable (:default-value ("NISTXMLSchemaDatatypes.testSet")) nil [591 636])
+            ("EXTRA_DIST" variable (:default-value ("xstc.py" "xstc-to-python.xsl")) nil [670 708])
+            ("all" function nil nil [801 806])
+            ("Tests/Metadata/" function nil nil [876 2441])
+            ("$(TESTDIRS)" function nil nil [876 2441])
+            ("nist-test.py" function (:arguments ("Tests/Metadata/$(NISTTESTDEF_2)" "xstc-to-python.xsl")) nil [2488 2831])
+            ("ms-test.py" function (:arguments ("Tests/Metadata/$(MSTTESTDEF)" "xstc-to-python.xsl")) nil [2832 3167])
+            ("sun-test.py" function (:arguments ("Tests/Metadata/$(SUNTESTDEF)" "xstc-to-python.xsl")) nil [3168 3500])
+            ("pytests" function (:arguments ("$(PYSCRIPTS)" "$(TESTDIRS)")) nil [3646 4802])
+            ("tests" function nil nil [4803 4875])
+            ("valgrind" function nil nil [4914 5073])
+            ("CLEANFILES" variable (:default-value ("$(PYSCRIPTS)" "test.log")) nil [5074 5107]))          
+      :file "Makefile.am"
+      :pointmax 5108
+      :fsize 5107
+      :lastmodtime '(22201 48319 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!41.tmp!libxml2-2.9.4!xstc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

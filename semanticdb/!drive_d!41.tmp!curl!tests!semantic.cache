@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("HTMLPAGES" variable (:default-value ("testcurl.html" "runtests.html")) nil [1007 1047])
+            ("PDFPAGES" variable (:default-value ("testcurl.pdf" "runtests.pdf")) nil [1047 1084])
+            ("EXTRA_DIST" variable (:default-value ("ftpserver.pl" "httpserver.pl" "secureserver.pl" "runtests.pl" "getpart.pm" "FILEFORMAT" "README" "stunnel.pem" "memanalyze.pl" "testcurl.pl" "valgrind.pm" "ftp.pm" "sshserver.pl" "sshhelp.pm" "pathhelp.pm" "testcurl.1" "runtests.1" "$(HTMLPAGES)" "$(PDFPAGES)" "serverhelp.pm" "tftpserver.pl" "rtspserver.pl" "directories.pm" "symbol-scan.pl" "CMakeLists.txt" "mem-include-scan.pl" "valgrind.supp" "http_pipe.py" "extern-scan.pl" "manpage-scan.pl" "nroff-scan.pl" "http2-server.pl")) nil [1085 1537])
+            ("DISTCLEANFILES" variable (:default-value ("configurehelp.pm")) nil [1538 1572])
+            ("BUILD_UNIT" variable (:default-value ("unit")) nil [1795 1813])
+            ("DIST_UNIT" variable nil nil [1813 1825])
+            ("BUILD_UNIT" variable nil nil [1830 1843])
+            ("DIST_UNIT" variable (:default-value ("unit")) nil [1843 1860])
+            ("SUBDIRS" variable (:default-value ("certs" "data" "server" "libtest" "$(BUILD_UNIT)")) nil [1867 1917])
+            ("DIST_SUBDIRS" variable (:default-value ("$(SUBDIRS)" "$(DIST_UNIT)")) nil [1917 1956])
+            ("PERLFLAGS" variable (:default-value ("-I$(srcdir)")) nil [1957 1981])
+            ("CLEANFILES" variable (:default-value (".http.pid" ".https.pid" ".ftp.pid" ".ftps.pid")) nil [1982 2035])
+            ("MAN2HTML" variable (:default-value ("roffit" "$<" ">$@")) nil [2036 2060])
+            ("curl" function nil nil [2061 2099])
+            ("TEST" variable (:default-value ("@echo" "\"NOTICE: we can't run the tests when cross-compiling!\"")) nil [2118 2186])
+            ("TEST" variable (:default-value ("srcdir=$(srcdir)" "$(PERL)" "$(PERLFLAGS)" "$(srcdir)/runtests.pl")) nil [2217 2284])
+            ("TEST_Q" variable (:default-value ("-a" "-s")) nil [2284 2299])
+            ("TEST_AM" variable (:default-value ("-a" "-am")) nil [2299 2316])
+            ("TEST_F" variable (:default-value ("-a" "-p" "-r")) nil [2316 2334])
+            ("TEST_T" variable (:default-value ("-a" "-t")) nil [2334 2349])
+            ("perlcheck" function nil nil [2407 2477])
+            ("test" function (:arguments ("perlcheck" "all")) nil [2478 2507])
+            ("quiet-test" function (:arguments ("perlcheck" "all")) nil [2508 2553])
+            ("am-test" function (:arguments ("perlcheck" "all")) nil [2554 2597])
+            ("full-test" function (:arguments ("perlcheck" "all")) nil [2598 2642])
+            ("torture-test" function (:arguments ("perlcheck" "all")) nil [2643 2690])
+            (".1.html" function nil nil [2691 2713])
+            (".1.pdf" function nil nil [2714 2868])
+            ("checksrc" function nil nil [2869 2971]))          
+      :file "Makefile.am"
+      :pointmax 2971
+      :fsize 3071
+      :lastmodtime '(22570 35374 0 0)
+      :unmatched-syntax '((shell-command 2941 . 2970) (bol 2940 . 2940) (ELSE 2186 . 2190) (bol 2186 . 2186))))
+  :file "!drive_d!41.tmp!curl!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,307 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_COMM_H" variable (:constant-flag t) nil [368 375])
+            ("_COMM_H" variable (:constant-flag t) nil [368 375])
+            ("_COMM_H" variable (:constant-flag t) nil [368 375])
+            ("COMM_LINK_CTRL_MSG_UDP" variable (:constant-flag t) nil [872 894])
+            ("COMM_LINK_CTRL_MSG_TCP" variable (:constant-flag t) nil [918 940])
+            ("COMM_LINK_CTRL_MSG_PIPE" variable (:constant-flag t) nil [964 987])
+            ("COMM_LINK_CTRL_SOCKET_PORT" variable (:constant-flag t) nil [1038 1064])
+            ("COMM_INTER_BOARD_SOCKET_PORT" variable (:constant-flag t) nil [1105 1133])
+            ("COMM_NET_SEND_TIMEOUT_ETHERNET" variable (:constant-flag t) nil [1186 1216])
+            ("COMM_NET_SEND_TIMEOUT_GPRS" variable (:constant-flag t) nil [1272 1298])
+            ("COMM_NET_SEND_MAXTRY" variable (:constant-flag t) nil [1343 1363])
+            ("COMM_RECV_CTRL_MQ_NUM" variable (:constant-flag t) nil [1445 1466])
+            ("COMM_RECV_CTRL_MQ_ITEM_SIZE" variable (:constant-flag t) nil [1493 1520])
+            ("COMM_CONN_CTRL_MQ_NUM" variable (:constant-flag t) nil [1565 1586])
+            ("COMM_CONN_CTRL_MQ_ITEM_SIZE" variable (:constant-flag t) nil [1613 1640])
+            ("COMM_STATUS_INIT" variable (:constant-flag t) nil [1682 1698])
+            ("COMM_STATUS_INTER_BOARD" variable (:constant-flag t) nil [1749 1772])
+            ("COMM_STATUS_WORK" variable (:constant-flag t) nil [1816 1832])
+            ("COMM_MAX_LINK_NOTICE_TNO" variable (:constant-flag t) nil [1907 1931])
+            ("COMM_LINK_CTRL_SOCKET_LISTEN" variable (:constant-flag t) nil [1974 2002])
+            ("COMM_LINK_CTRL_SOCKET_CONNECT" variable (:constant-flag t) nil [2020 2049])
+            ("COMM_LINK_CTRL_FD" variable (:constant-flag t) nil [2066 2083])
+            ("COMM_LINK_STATUS_UNUSED" variable (:constant-flag t) nil [2124 2147])
+            ("COMM_LINK_STATUS_OPEN" variable (:constant-flag t) nil [2182 2203])
+            ("COMM_LINK_STATUS_HALF_CLOSE" variable (:constant-flag t) nil [2239 2266])
+            ("COMM_LINK_STATUS_CLOSE" variable (:constant-flag t) nil [2297 2319])
+            ("COMM_MAX_APPTYPE" variable (:constant-flag t) nil [2355 2371])
+            ("COMM_MAX_LINKTYPE" variable (:constant-flag t) nil [2421 2438])
+            ("COMM_MAX_LINKINDEX" variable (:constant-flag t) nil [2487 2505])
+            ("COMM_MAX_RCV_MSG_LEN" variable (:constant-flag t) nil [2577 2597])
+            ("COMM_MAX_SND_MSG_LEN" variable (:constant-flag t) nil [2643 2663])
+            ("COMM_INVALID_FD" variable (:constant-flag t) nil [2709 2724])
+            ("COMM_CONNECT_DELAY" variable (:constant-flag t) nil [2773 2791])
+            ("COMM_EXCEPT" variable (:constant-flag t) nil [4715 4726])
+            ("COMM_LED_BUSINESS_ON" variable (:constant-flag t) nil [5165 5185])
+            ("COMM_LED_BUSINESS_OFF" variable (:constant-flag t) nil [5194 5215])
+            ("COMM_SEND_MSG" variable (:constant-flag t) nil [5252 5265])
+            ("COMM_RECV_MSG" variable (:constant-flag t) nil [5329 5342])
+            ("COMM_HOLD_RECV_MSG" variable (:constant-flag t) nil [5446 5464])
+            ("COMM_SERIAL_DELIMITER_CHAR_MAIN" variable (:constant-flag t) nil [5580 5611])
+            ("COMM_SERIAL_DELIMITER_PRECOUNT" variable (:constant-flag t) nil [5643 5673])
+            ("COMM_SERIAL_DELIMITER_TAILCOUNT" variable (:constant-flag t) nil [5709 5740])
+            ("COMM_SERIAL_DELIMITER_CHAR_ASSIST" variable (:constant-flag t) nil [5775 5808])
+            ("COMM_SERIAL_TRANSFER_CHAR_MAIN" variable (:constant-flag t) nil [5839 5869])
+            ("COMM_SERIAL_TRANSFER_CHAR_ASSIST" variable (:constant-flag t) nil [5912 5944])
+            ("COMM_SERIAL_ENCODE_STATUS_HEAD" variable (:constant-flag t) nil [6002 6032])
+            ("COMM_SERIAL_ENCODE_STATUS_MSG_HEAD" variable (:constant-flag t) nil [6072 6106])
+            ("COMM_SERIAL_ENCODE_STATUS_MSG" variable (:constant-flag t) nil [6143 6172])
+            ("COMM_SERIAL_ENCODE_STATUS_CRC" variable (:constant-flag t) nil [6213 6242])
+            ("COMM_SERIAL_ENCODE_STATUS_TAIL" variable (:constant-flag t) nil [6283 6313])
+            ("COMM_SERIAL_DECODE_STATUS_HEAD" variable (:constant-flag t) nil [6369 6399])
+            ("COMM_SERIAL_DECODE_STATUS_DATA" variable (:constant-flag t) nil [6439 6469])
+            ("COMM_SERIAL_DECODE_STATUS_ASSIST" variable (:constant-flag t) nil [6509 6541])
+            ("COMM_COMMAND_DATA" variable (:constant-flag t) nil [6597 6614])
+            ("COMM_REPORT_DATA" variable (:constant-flag t) nil [6668 6684])
+            ("COMM_HOLD_DATA_REPORT_TYPE_CLIENT_REQUEST" variable (:constant-flag t) nil [6759 6800])
+            ("COMM_HOLD_DATA_REPORT_TYPE_IMMEDIATELY" variable (:constant-flag t) nil [6831 6869])
+            ("COMM_MAX_LINK_FORWARD_TNO" variable (:constant-flag t) nil [6925 6950])
+            ("tagT_CommSocketListen" type
+               (:members 
+                  ( ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7256 7282])
+                    ("ucLinkType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7309 7336])
+                    ("wListenPort" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7362 7390]))                  
+                :type "struct")
+                nil [7213 7433])
+            ("T_CommSocketListen" type
+               (:typedef ("tagT_CommSocketListen" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7213 7433])
+            ("tagT_CommSocketConnect" type
+               (:members 
+                  ( ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7492 7518])
+                    ("ucLinkType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7546 7573])
+                    ("wConnPort" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7600 7626])
+                    ("dwConnIp" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7653 7678]))                  
+                :type "struct")
+                nil [7448 7724])
+            ("T_CommSocketConnect" type
+               (:typedef ("tagT_CommSocketConnect" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7448 7724])
+            ("tagT_CommLinkFd" type
+               (:members 
+                  ( ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7782 7808])
+                    ("ucLinkType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7835 7862])
+                    ("ucLinkIndex" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7888 7916])
+                    ("ucPad" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7939 7961])
+                    ("sdwFd" variable (:type ("SWORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7966 7988]))                  
+                :type "struct")
+                nil [7745 8028])
+            ("T_CommLinkFd" type
+               (:typedef ("tagT_CommLinkFd" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7745 8028])
+            ("tagT_CommLink" type
+               (:members 
+                  ( ("tCommSocketListen" variable (:type ("T_CommSocketListen" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8079 8122])
+                    ("tCommSocketConnect" variable (:type ("T_CommSocketConnect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8146 8190])
+                    ("tCommLinkFd" variable (:type ("T_CommLinkFd" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8211 8248]))                  
+                :type "union")
+                nil [8045 8290])
+            ("T_CommLink" type
+               (:typedef ("tagT_CommLink" type (:type "union") nil nil)
+                :type "typedef")
+                nil [8045 8290])
+            ("tagT_CommLinkCtrl" type
+               (:members 
+                  ( ("ucIsUsed" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8348 8382])
+                    ("ucType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8406 8438])
+                    ("wPad" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8462 8492])
+                    ("sdwFd" variable (:type ("SWORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8497 8528])
+                    ("dwTime" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8556 8588])
+                    ("tCommLink" variable (:type ("T_CommLink" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8623 8658]))                  
+                :type "struct")
+                nil [8309 8698])
+            ("T_CommLinkCtrl" type
+               (:typedef ("tagT_CommLinkCtrl" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [8309 8698])
+            ("tagT_CommAppTypeDescriptor" type
+               (:members 
+                  ( ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8771 8805])
+                    ("ucIsDelayOpen" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8835 8873])
+                    ("ucIsLinkNotice" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8899 8938])
+                    ("ucPad" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8975 9005])
+                    ("awTno" variable
+                       (:dereference 1
+                        :type ("WORD16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9010 9066])
+                    ("openLinkProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_openLink" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9106 9144])
+                    ("isAcceptLinkProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_isAcceptLink" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9170 9212])
+                    ("initLinkProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_initLink" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9236 9274])
+                    ("closeLinkProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_closeLink" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9305 9344])
+                    ("recvDataProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_recvData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9369 9407])
+                    ("sendDataProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_sendData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9437 9475])
+                    ("keepLiveProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_keepLive" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9505 9543])
+                    ("queryProc" variable
+                       (:pointer 1
+                        :type ("usp_comm_query" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9577 9612]))                  
+                :type "struct")
+                nil [8720 9664])
+            ("T_CommAppTypeDescriptor" type
+               (:typedef ("tagT_CommAppTypeDescriptor" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [8720 9664])
+            ("tagT_CommCongestionHoldConf" type
+               (:members 
+                  ( ("ucLinkType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9738 9781])
+                    ("ucLinkIndex" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9807 9851])
+                    ("ucIsCongestionCtrl" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9875 9926])
+                    ("ucIsHold" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9944 9985])
+                    ("ucIsRTSendAck" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10013 10059])
+                    ("ucIsHoldSendAck" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10087 10135])
+                    ("ucHoldStruct" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10161 10206])
+                    ("ucReportType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10234 10279])
+                    ("wReportNum" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10303 10346])
+                    ("wReportSize" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10377 10421])
+                    ("dwCongestionResendTime" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10451 10506])
+                    ("dwHoldResendTime" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10531 10580])
+                    ("dwCongestionSize" variable (:type ("WORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10613 10662])
+                    ("holdSendAdapter" variable
+                       (:pointer 1
+                        :type ("usp_comm_holdSendAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10873 10922])
+                    ("holdRecvAdapter" variable
+                       (:pointer 1
+                        :type ("usp_comm_holdRecvAdapter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10950 10999])
+                    ("ucLinkOpened" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11139 11184])
+                    ("ucPad" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11212 11250])
+                    ("wHoldSendNum" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11255 11300]))                  
+                :type "struct")
+                nil [9688 11357])
+            ("T_CommCongestionHoldConf" type
+               (:typedef ("tagT_CommCongestionHoldConf" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [9688 11357])
+            ("tagT_CommCongestionItem" type
+               (:members 
+                  ( ("ucDataType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11422 11447])
+                    ("ucPad" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11478 11498])
+                    ("wPad" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11503 11522]))                  
+                :type "struct")
+                nil [11374 11545])
+            ("T_CommCongestionItem" type
+               (:typedef ("tagT_CommCongestionItem" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [11374 11545])
+            ("tagT_CommLinkIdCtrl" type
+               (:members 
+                  ( ("ucStatus" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11608 11645])
+                    ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11690 11728])
+                    ("ucLinkType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11758 11797])
+                    ("ucLinkIndex" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11826 11866])
+                    ("ucIsCompleteOpened" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11892 11939])
+                    ("ucIsKeepLive" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11960 12001])
+                    ("ucIsBusiness" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12026 12067])
+                    ("aucPad" variable
+                       (:dereference 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12095 12133])
+                    ("wSendLen" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12142 12179])
+                    ("sdwFd" variable (:type ("SWORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12216 12250])
+                    ("sdwNewFd" variable (:type ("SWORD32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12283 12320])
+                    ("tUSPCommLinkDesc" variable (:type ("T_USPCommLinkDesc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12352 12397])
+                    ("ptUSPCommConfig" variable
+                       (:pointer 1
+                        :type ("T_USPCommConfig" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12421 12466])
+                    ("congestionHandle" variable (:type ("USP_OssMmFifoHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12489 12534]))                  
+                :type "struct")
+                nil [11564 12573])
+            ("T_CommLinkIdCtrl" type
+               (:typedef ("tagT_CommLinkIdCtrl" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [11564 12573])
+            ("tagT_CommConfig" type
+               (:members 
+                  ( ("ucIsUsed" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12632 12669])
+                    ("aucPad" variable
+                       (:dereference 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12698 12736])
+                    ("tUSPCommConfig" variable (:type ("T_USPCommConfig" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12741 12784]))                  
+                :type "struct")
+                nil [12588 12817])
+            ("T_CommConfig" type
+               (:typedef ("tagT_CommConfig" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [12588 12817])
+            ("tagT_CommLinkForward" type
+               (:members 
+                  ( ("wTno" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12878 12903])
+                    ("ucAppType" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12932 12962])
+                    ("ucPad" variable (:type ("BYTE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12989 13015]))                  
+                :type "struct")
+                nil [12836 13035])
+            ("T_CommLinkForward" type
+               (:typedef ("tagT_CommLinkForward" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [12836 13035])
+            ("tagT_CommLibHandle" type
+               (:members 
+                  ( ("localTno" variable (:type ("USPLibScpTno" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13101 13130])
+                    ("commTno" variable (:type ("USPLibScpTno" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13179 13207])
+                    ("smsTno" variable (:type ("USPLibScpTno" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13259 13286])
+                    ("wMsgSequence" variable (:type ("WORD16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13338 13367])
+                    ("aucMsgBuf" variable
+                       (:dereference 1
+                        :type ("BYTE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13409 13465]))                  
+                :type "struct")
+                nil [13061 13500])
+            ("T_CommLibHandle" type
+               (:typedef ("tagT_CommLibHandle" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [13061 13500])
+            ("COMM_DECLARE_APPTYPE_DESC" variable (:constant-flag t) nil [13983 14008])
+            ("COMM_BEGIN_APPTYPE_DESC_DEFINE" variable (:constant-flag t) nil [14465 14495])
+            ("COMM_IMPLEMENT_APPTYPE_DESC" variable (:constant-flag t) nil [14589 14616])
+            ("COMM_END_APPTYPE_DESC_DEFINE" variable (:constant-flag t) nil [14972 15000])
+            ("COMM_DECLARE_HOLD_ADAPTER" variable (:constant-flag t) nil [15305 15330])
+            ("COMM_BEGIN_CONGESTION_HOLD_DEFINE" variable (:constant-flag t) nil [15492 15525])
+            ("COMM_IMPLEMENT_CONGESTION_HOLD_A" variable (:constant-flag t) nil [15655 15687])
+            ("COMM_END_CONGESTION_HOLD_DEFINE" variable (:constant-flag t) nil [16233 16264]))          
+      :file "comm.h"
+      :pointmax 16746
+      :fsize 18144
+      :lastmodtime '(22550 42007 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_COMM_H")
+          )
+))
+  :file "!drive_d!02.workspace!6730!Code!USP!Code!Comm!Include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
