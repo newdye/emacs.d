@@ -45,3 +45,5 @@ site-lisp/package/
 /anaconda-mode/
 /*.log
 /server
+/semanticdb
+
