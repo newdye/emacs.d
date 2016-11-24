@@ -1,10 +1,15 @@
-(add-to-list 'exec-path "C:/Program Files/git/bin")
-(add-to-list 'exec-path "D:/32.emacs/tools/GnuGlobal/bin/")
-(add-to-list 'Info-additional-directory-list "D:/32.emacs/tools/GnuGlobal/share/info")
-(add-to-list 'Info-additional-directory-list "D:/32.emacs/HOME/.emacs.d/elpa/sicp-20151130.757")
-(add-to-list 'load-path "D:/32.emacs/emacs-c-ide-demo")
-(setq tramp-default-method "plink")
-(setq password-cache-expiry "3600000")
+(when (eq system-type 'windows-nt)
+  (progn
+    (add-to-list 'exec-path "C:/Program Files/git/bin")
+    (add-to-list 'exec-path "D:/32.emacs/tools/GnuGlobal/bin/")
+    (add-to-list 'Info-additional-directory-list "D:/32.emacs/tools/GnuGlobal/share/info")
+    (add-to-list 'Info-additional-directory-list "D:/32.emacs/HOME/.emacs.d/elpa/sicp-20151130.757")
+    (add-to-list 'load-path "D:/32.emacs/emacs-c-ide-demo")
+    (setq tramp-default-method "plink")
+    (setq password-cache-expiry "3600000")
+  )
+)
+
 ;; ;; init.el comment init-ido.el & init-ivy.el disable ido-mode, if want to use
 ;; ;; ido-mode, uncomment init-ido.el. It set var ido-ubiquitous-mode t.
 ;; ;; (setq ido-enable-flex-matching t)

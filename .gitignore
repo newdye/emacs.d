@@ -46,4 +46,4 @@ site-lisp/package/
 /*.log
 /server
 /semanticdb
-
+\.\#*
