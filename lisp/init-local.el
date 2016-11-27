@@ -7,8 +7,8 @@
     (add-to-list 'load-path "D:/32.emacs/emacs-c-ide-demo")
     (setq tramp-default-method "plink")
     (setq password-cache-expiry "3600000")
+    )
   )
-)
 
 ;; ;; init.el comment init-ido.el & init-ivy.el disable ido-mode, if want to use
 ;; ;; ido-mode, uncomment init-ido.el. It set var ido-ubiquitous-mode t.
@@ -24,10 +24,14 @@
 ;;           (lambda ()
 ;;             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
 ;;               (ggtags-mode 1))))
-(setq url-proxy-services
-      '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-        ("http" . "proxy.zte.com.cn:80")
-        ("https" . "proxy.zte.com.cn:80")))
+(defun set-zte-proxy ()
+  "Set http proxy in office."
+  (interactive)
+  (setq url-proxy-services
+        '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+          ("http" . "proxy.zte.com.cn:80")
+          ("https" . "proxy.zte.com.cn:80")))
+  )
 (require-package 'ggtags)
-(require 'init-c-ide)
+;;(require 'init-c-ide)
 (provide 'init-local)
