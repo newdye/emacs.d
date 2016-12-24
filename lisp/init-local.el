@@ -36,4 +36,7 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+(add-to-list 'company-backends 'company-gtags)
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
+
 (provide 'init-local)
