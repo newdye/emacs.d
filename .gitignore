@@ -47,4 +47,5 @@ site-lisp/package/
 /server
 /semanticdb
 \.\#*
+
 /srecode-map.el
