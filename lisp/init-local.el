@@ -37,6 +37,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (add-to-list 'company-backends 'company-gtags)
+(add-to-list 'company-backends 'company-c-headers)
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 
 (provide 'init-local)
