@@ -39,5 +39,8 @@
 (add-to-list 'company-backends 'company-gtags)
 (add-to-list 'company-backends 'company-c-headers)
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
+(add-hook 'c-mode-common-hook 'linum-mode)
+(add-hook 'c-mode-hook (lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-pink)))
 
 (provide 'init-local)
+;;; init-local.el ends here
