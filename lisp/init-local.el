@@ -42,5 +42,6 @@
 (add-hook 'c-mode-common-hook 'linum-mode)
 (add-hook 'c-mode-hook (lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-pink)))
 
+(setq org-plantuml-jar-path (expand-file-name "~/emacs.d/plantuml.jar"))
 (provide 'init-local)
 ;;; init-local.el ends here
