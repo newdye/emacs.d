@@ -1,6 +1,7 @@
 /url/cache
 /.emacs.desktop
 /auto-save-list
+/network-security.data
 /.session
 /session.*
 /custom.el
@@ -18,7 +19,8 @@ cookies
 /newsticker
 /ac-comphist.dat
 \#*
-# /elpa
+/elpa
+/elpa-*
 site-lisp/package/
 /swank
 /.mc-lists.el
@@ -47,5 +49,7 @@ site-lisp/package/
 /server
 /semanticdb
 \.\#*
-
 /srecode-map.el
+/.historian
+/.uptimes.el
+/rake.cache
