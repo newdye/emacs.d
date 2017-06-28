@@ -19,8 +19,8 @@ cookies
 /newsticker
 /ac-comphist.dat
 \#*
-#/elpa
-#/elpa-*
+/elpa
+/elpa-*
 site-lisp/package/
 /swank
 /.mc-lists.el
@@ -39,7 +39,6 @@ site-lisp/package/
 /.cask/
 /.sx/
 /org-clock-save.el
-/ditaa*.jar
 /ido.last
 /recentf
 /viper
@@ -53,3 +52,4 @@ site-lisp/package/
 /.historian
 /.uptimes.el
 /rake.cache
+elpa-24.5/archives/gnu/archive-contents
